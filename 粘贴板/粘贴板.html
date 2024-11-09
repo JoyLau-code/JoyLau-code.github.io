@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clipboard Example</title>
+    <style>
+        
+        input{
+            width: 300px;
+            height: 50px;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+        }
+        
+        #output{
+            margin-top: 10px;
+            width:100%; 
+            height: auto; 
+            border: 1px solid rgb(198, 196, 196);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <input type="text" id="inputText" placeholder="请输入内容">
+    <button onclick="copyToClipboard(document.getElementById('inputText').value)">复制到剪切板</button>
+    <button onclick="pasteFromClipboard()">粘贴在页面上</button>
+    <div id="output"></div>
+
+    <script>
+
+        function copyToClipboard(text) {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text)
+                .then(() => {
+                    console.log('已复制到剪切板');
+                })
+                .catch((err) => {
+                    console.error('无法将文字复制到剪切板: ', err);
+                });
+            } else {
+                console.log('剪贴板的api端口不可用');
+            }
+        }
+
+        function pasteFromClipboard() {
+            if (navigator.clipboard) {
+                navigator.clipboard.readText()
+                .then(
+                    clipText => {
+                    console.log(clipText);
+                    document.getElementById('output').innerText = clipText; // 假设有一个元素的ID是'output'
+                    },
+                    err => {
+                    console.error('无法读取到剪切板上的内容: ', err);
+                    }
+                );
+            } else {
+                console.log('剪切板的api端口不可用');
+                }
+        }
+        
+    </script>
+    
+</body>
+</html>
