@@ -1,0 +1,464 @@
+/* 1.页头 */
+.head{
+    width: 100%;
+    height: 36px;
+
+    background-color:#333333;
+}
+.head .container{
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+
+    background-color: #333333;
+
+    position: relative;
+}
+.head .container .word{
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+/* 2.logo+搜索栏+购物车 */
+.lsg{
+    width: 100%;
+    height: 140px;
+    /* background-color: aqua; */
+}
+.lsg .container{
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+
+    position: relative;
+    /* background-color: aquamarine; */
+
+}
+.lsg .container .logo{
+    position: absolute;
+    top:40px;
+}
+.lsg .container .search{
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    left: 375px;
+
+    border: 1.5px solid #2b6e5a;
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* background-color: #f24444; */
+}
+.lsg .container .search img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.lsg .container .search input{
+    width: 263px;
+    height: 37px;
+    position: absolute;
+    top: 0px;
+    left: 35px;
+}
+.lsg .container .search .action{
+    width: 100px;
+    height: 37px;
+    color: white;
+    text-align: center;
+    line-height: 37px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #2b6e5a;
+    border-radius: 0 20px 20px 0;
+}
+.lsg .container .gwc{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+    top: 60px;
+
+    border: 1.5px solid #807e7f;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    /* background-color: aquamarine; */
+
+}
+.lsg .container .gwc img{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+.lsg .container .gwc .a{
+    font-size: 14px;
+    color: #807e7f;
+    position: absolute;
+    top: 10px;
+    left: 58px;
+}
+.lsg .container .gwc .a0{
+    position: absolute;
+    left: 105px;
+    /* top: 1px; */
+}
+
+/* 3.菜单 */
+.menu{
+    width: 100%;
+    height: 70px;
+    /* background-color: aqua; */
+}
+.menu .container{
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: #2b6e5a; */
+
+    position: relative;
+}
+.menu .container li{
+    margin-right: 50px;
+    float: left;
+    font-size: 14px;
+}
+.menu .container ul{
+    position: absolute;
+    top: 26px;
+    left: 260px;
+}
+.menu .container .m1{
+    border-bottom: 2px solid #b2ccc4;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+/* 4.导航栏 */
+.navbar{
+    width: 100%;
+    height: 189px;
+    /* background-color: #2b6e5a; */
+}
+.navbar .container{
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+.navbar .container .up{
+    width: 90px;
+    height: 12px;
+    font-size: 12px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .container .down{
+    width: 100%;
+    height: 132px;
+    position: absolute;
+    bottom: 20px;
+    /* background-color: aqua; */
+}
+.navbar .container .down .first{
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .container .down .first .biao1{
+    width: 500px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .container .down .second{
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .container .down .second .biao2{
+    width: 600px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .container .down .third{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .container .down .third .biao3{
+    width: 180px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 5.内容 */
+.content{
+    width: 100%;
+    height: 1616px;
+    /* background-color: aqua; */
+}
+.content .container{
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+
+    position: relative;
+    /* background-color: #807e7f; */
+}
+.content .container .first{
+    width: 100%;
+    height: 344px;
+    position: absolute;
+    top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #2b6e5a; */
+}
+
+.content .container img{
+    width: 270px;
+    height: 270px;
+}
+.content .container .name{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #979797;
+}
+.content .container .price1{
+    font-size: 14px;
+    color: #e56b6a;
+    /* margin-top: 7px; */
+    margin-left: 78px;
+}
+.content .container .price2{
+    font-size: 12px;
+    color: #c4c4c4;
+    margin-top: -16px;
+    margin-left: 140px;
+}
+
+.content .container .second{
+    width: 100%;
+    height: 344px;
+    position: absolute;
+    top: 404px;
+
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #e74998; */
+}
+.content .container .third{
+    width: 100%;
+    height: 344px;
+    position: absolute;
+    top: 778px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+}
+.content .container .forth{
+    width: 100%;
+    height: 344px;
+    position: absolute;
+    top: 1152px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #333333; */
+}
+
+/* 6.页脚 */
+.foot{
+    width: 100%;
+    height: 432px;
+    background-color: #222222;
+}
+.foot .container{
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #222222;
+
+    position: relative;
+}
+.foot .container .up{
+    width: 100%;
+    height: 182px;
+    background-color: #222222;
+}
+.foot .container .up .icon{
+    width: 100%;
+    height: 81px;
+    background-color: #222222;
+    position: absolute;
+    top: 49px;
+}
+/* 绿色环保 */
+.foot .container .up .icon .a{
+    width: 72px;
+    height: 81px;
+    background-color: #222222;
+}
+.foot .container .up .icon .a img{
+    margin-left: 10px;
+}
+.foot .container .up .icon .a .word1{
+    color: white;
+    font-size: 18px;
+}
+/* 七天无理由退货 */
+.foot .container .up .icon .b{
+    width: 126px;
+    height: 81px;
+    background-color: #222222;
+    position: absolute;
+    left: 256.25px;
+    top: 0;
+}
+.foot .container .up .icon .b img{
+    margin-left: 38px;
+}
+.foot .container .up .icon .b .word2{
+    color: white;
+    font-size: 18px;
+}
+/* 配送安装 */
+.foot .container .up .icon .c{
+    width: 72px;
+    height: 81px;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    left: 566.5px;
+
+}
+.foot .container .up .icon .c img{
+    margin-left: 10px;
+}
+.foot .container .up .icon .c .word3{
+    color: white;
+    font-size: 18px;
+}
+/* 退货保障 */
+.foot .container .up .icon .d{
+    width: 72px;
+    height: 81px;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    left: 822.75px;
+
+}
+.foot .container .up .icon .d img{
+    margin-left: 10px;
+}
+.foot .container .up .icon .d .word4{
+    color: white;
+    font-size: 18px;
+}
+/* 送货上门 */
+.foot .container .up .icon .e{
+    width: 72px;
+    height: 81px;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    left: 1079px;
+
+}
+.foot .container .up .icon .e img{
+    margin-left: 10px;
+}
+.foot .container .up .icon .e .word5{
+    color: white;
+    font-size: 18px;
+}
+.foot .container .up .line{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 250px;
+}
+
+.foot .container .down{
+    width: 956px;
+    height: 151px;
+    background-color: #222222;
+    position: absolute;
+    top: 230px;
+    left: 97px;
+}
+
+.foot .container .down .hard>li{
+    float: left;
+    margin-left: 105px;
+    font-size: 14px;
+    color: #929292;
+}
+.foot .container .down .hard{
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+.foot .container .down .hard .h1{
+    margin-top: 29px;
+}
+.foot .container .down .hard .h1 li{
+    margin-bottom: 19px;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+.foot .container .down .hard .h2{
+    margin-top: 29px;
+}
+.foot .container .down .hard .h2 li{
+    margin-bottom: 19px;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+.foot .container .down .hard .h3{
+    margin-top: 29px;
+}
+.foot .container .down .hard .h3 li{
+    margin-bottom: 19px;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+.foot .container .down .hard .h4{
+    margin-top: 29px;
+}
+.foot .container .down .hard .h4 li{
+    margin-bottom: 19px;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+
+/* 7.最底部 */
+.bottom{
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 80px;
+    color: #969696;
+    font-size: 14px;
+}
